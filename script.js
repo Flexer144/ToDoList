@@ -25,6 +25,7 @@ buttonAdd.addEventListener('click', () => {
 
   renderTask()
   saveToStorage()
+  input = '';
 });
 
 function renderTask(){
