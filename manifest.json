@@ -1,0 +1,22 @@
+{
+  "name": "ToDoList",
+  "short_name": "TDL",
+  "icons": [
+    {
+      "src": "todo_items_unordered_list_icon_260495.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "todo_items_unordered_list_icon_260495.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Приложение для составления списка задач",
+  "orientation": "portrait"
+}
