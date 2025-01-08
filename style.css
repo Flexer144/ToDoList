@@ -16,10 +16,8 @@ main{
   height: auto;
 }
 .content{
-  width: 100%;
   min-width: 200px;
-  height: 200px;
-
+  padding-bottom: 15px;
   border: 1px solid gray;
   border-radius: 10px;
   display: flex;
@@ -42,6 +40,7 @@ main{
   border-top: none;
   background: none;
   border-right: none;
+  border-left: none;
   color: white;
   font-family: Montserrat Alternates;
   font-size: 15px
@@ -67,4 +66,44 @@ main{
 .button-add:hover{
   background-color: white;
   color: black;
+}
+
+.task-list{
+  width: 90%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.task{
+  display: flex;
+  flex-direction: row;
+}
+.task-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.task-list button{
+  padding: 2px 15px;
+  padding-bottom: 4px;
+  border-radius: 10px;
+  background: none;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  border: 2px solid rgb(255, 255, 255);
+  font-family: Montserrat Alternates;
+  transition: background-color 0.15s, color 0.15s;
+}
+.task-list button:hover{
+  background-color: white;
+  color: black;
+  font-weight: 800;
+}
+.disabled{
+  pointer-events: none;
 }
