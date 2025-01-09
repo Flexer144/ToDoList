@@ -21,7 +21,7 @@ buttonAdd.addEventListener('click', () => {
   task.push({
     taskName: input.value,
     taskId: id
-  })
+  }) 
 
   renderTask()
   saveToStorage()
