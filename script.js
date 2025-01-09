@@ -16,15 +16,16 @@ inputTask.addEventListener('input', ()=>{
 })
 
 buttonAdd.addEventListener('click', () => {
-  let input = document.getElementById('input-task').value;
+  let input = document.getElementById('input-task')
   let id = Math.floor(Math.random() * 100000);
   task.push({
-    taskName: input,
+    taskName: input.value,
     taskId: id
   })
 
   renderTask()
   saveToStorage()
+  input.value = '';
 });
 
 function renderTask(){
@@ -36,7 +37,7 @@ function renderTask(){
           <div>${index + 1}.</div>
           <div style="margin-left: 10px;">${task.taskName}</div>
         </div>
-        <button data-task-id="${task.taskId}" class="button-remove">✕</button>
+        <button style="margin-left: 10px;" data-task-id="${task.taskId}" class="button-remove">✕</button>
       </div>
     `
   })
